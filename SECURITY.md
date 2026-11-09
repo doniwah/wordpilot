@@ -31,9 +31,7 @@ https://github.com/OWNER/wordpilot/security/advisories/new
 
 Alternatively, contact the project maintainers through:
 
-[INSERT SECURITY CONTACT EMAIL]
-
-Replace `OWNER` with the actual GitHub repository owner.
+**Security Email:** whyddoni@gmail.com
 
 ## What to Include
 
