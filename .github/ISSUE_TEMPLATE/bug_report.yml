@@ -1,0 +1,78 @@
+name: Bug Report
+description: Report a bug or unexpected behavior in WordPilot.
+title: "[BUG] "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a bug!
+        Please provide enough information to reproduce the issue.
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      description: Where did you encounter the issue?
+      options:
+        - Word Add-in
+        - Backend API
+        - AI Integration
+        - Documentation
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: Clearly describe the problem.
+      placeholder: What happened?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: List the steps to reproduce the issue.
+      placeholder: |
+        1. Open Word
+        2. Open WordPilot
+        3. Enter a prompt
+        4. See the error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happened?
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: "macOS 15, Microsoft Word 365, Node.js 22"
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or Screenshots
+      description: Attach relevant logs or screenshots.
+    validations:
+      required: false
